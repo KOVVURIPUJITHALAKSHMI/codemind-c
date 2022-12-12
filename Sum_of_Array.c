@@ -4,7 +4,6 @@ int main()
     int n,i,sum=0;
     scanf("%d",&n);
     int a[n];
-    
     for(i=0;i<n;i++)
     {
         scanf("%d",&a[i]);
@@ -12,7 +11,6 @@ int main()
     for(i=0;i<n;i++)
     {
         sum=sum+a[i];
-       
     }
-     printf("%d",sum);
+    printf("%d",sum);
 }
