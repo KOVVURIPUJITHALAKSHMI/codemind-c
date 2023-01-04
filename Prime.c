@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,c=0;
+    int i,n,c=0;
     scanf("%d",&n);
     for(i=1;i<=n;i++)
     {
@@ -9,15 +9,14 @@ int main()
         {
             c++;
         }
-        
     }
-    if(c!=2)
+    if(c==2)
     {
-        printf("Not Prime");
+        printf("Prime");
     }
     else
     {
-        printf("Prime");
+        printf("Not Prime");
     }
     
 }
