@@ -1,16 +1,25 @@
 #include<stdio.h>
 int main()
 {
-    int i,a,b,l,gcd;
+    int a,b,x,y,i,p;
     scanf("%d%d",&a,&b);
-    for(i=1;i<=a;i++)
+    if(a>b)
     {
-        if(a%i==0&&b%i==0)
+        x=a;
+        y=b;
+    }
+    else
+    {
+        x=b;
+        y=a;
+    }
+    for(i=1;i<x*b;i++)
+    {
+        p = x*i;
+        if(p%y==0)
         {
-            gcd=i;
+            printf("%d",p);
+            break;
         }
     }
-    l=(a*b)/gcd;
-    printf("%d",l);
-    
 }
