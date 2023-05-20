@@ -11,10 +11,8 @@ int main()
         if(r>max)
         {
             max=r;
-            
         }
         q=q/10;
-        
     }
     printf("%d",max);
 }
